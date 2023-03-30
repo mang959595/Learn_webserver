@@ -96,7 +96,7 @@ public:
         pthread_cond_destroy(&m_cond);
     }
 
-    // 原函数返回0表示调用成功
+    // 原函数返回0表示调用成功, 封装为返回1表示成功
     bool wait(pthread_mutex_t *m_mutex)
     {
         int ret = 0;
